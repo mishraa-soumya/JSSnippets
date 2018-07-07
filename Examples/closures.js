@@ -62,3 +62,17 @@ var cntrVar = counter();
 var incrementVal = cntrVar.increment();
 console.log(cntrVar.value());
 
+
+/**
+* Example of global & local scope
+*/
+
+var result = [];
+var j = 7;
+for (let i = 0; i < 5; i++) {
+    result[i] = function () {
+        console.log(i);
+    };
+}
+
+result[0](); // 0 is expected, but prints 5   

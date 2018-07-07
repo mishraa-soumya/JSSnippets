@@ -1,0 +1,47 @@
+.closures{
+    display: grid;
+    grid-template-columns: repeat(4, 100px); 
+    grid-gap: 1em;
+}
+
+.closures .item{
+    display: grid;
+    grid-template-columns: 20px 40px 20px; 
+    justify-items: center;
+    border: 1px solid #000;
+}
+
+.closures .minus{
+    position: relative;
+    border-right: 1px solid #000;
+    width: 20px;
+}
+
+.closures .minus::after{
+    position: absolute;
+    content: '-';
+    width: 40px;
+    height: 40px;
+    color: blue;
+    left: 8px;
+}
+.closures .plus {
+    position: relative;
+    border-left: 1px solid #000;
+    width: 20px;
+}
+
+.closures .plus::after{
+    position: absolute;
+    content: '+';
+    width: 40px;
+    height: 40px;
+    color: blue;
+    left: 8px;
+}
+
+.closures .label{
+    display: flex;
+    color: blue;
+}
+

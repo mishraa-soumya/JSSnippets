@@ -64,7 +64,7 @@ console.log(cntrVar.value());
 
 
 /**
-* Example of global & local scope
+* Example of global & local scope, inside FOR LOOP
 */
 
 var result = [];
